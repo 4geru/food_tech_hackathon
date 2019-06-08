@@ -26,7 +26,8 @@ gem 'ridgepole'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc'
-
+gem 'faraday'
+gem 'rack-cors'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

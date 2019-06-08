@@ -1,0 +1,1 @@
+`(echo -n '{"image": "'; base64 './kyabetsu.jpeg'; echo '"}') | curl -X POST -H "Content-Type: application/json" -d @-  https://d811c88a.ngrok.io/photos`

@@ -7,5 +7,6 @@ json.recipes do
   json.array! @material.recipe_materials do |recipe_material|
     json.name recipe_material.recipe.name
     json.url recipe_material.recipe.url
+    json.link recipe_material.recipe.link
   end
 end
