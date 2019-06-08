@@ -1,0 +1,24 @@
+create_table(:user) do |t|
+  t.string :name, null: false
+end
+
+create_table(:material) do |t|
+  t.string :name, null: false
+  t.integer :amount
+end
+
+create_table(:basket) do |t|
+  t.references :user
+  t.references :material
+end
+
+create_table(:recipe) do |t|
+  t.string :name, null: false
+  t.string :url, null: false
+end
+
+create_table(:recipe_material) do |t|
+  t.references :recipe
+  t.references :material
+end
+
