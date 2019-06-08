@@ -23,7 +23,6 @@ create_table(:recipe_materials) do |t|
 end
 
 create_table(:user_recipes) do |t|
+  t.references :user
   t.references :recipe
-  t.references :material
 end
-

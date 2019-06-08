@@ -1,4 +1,4 @@
 class Material < ApplicationRecord
-  belongs_to :basket
-  belongs_to :recipes_material
+  has_many :baskets
+  has_many :recipe_materials
 end
