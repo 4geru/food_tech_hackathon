@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  post '/callback' => 'linebot#callback'
+  resources :users, only: %i[show]
+  resources :materials, only: %i[show]
 end
